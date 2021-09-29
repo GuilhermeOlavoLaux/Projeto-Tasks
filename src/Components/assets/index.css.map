@@ -1,10 +1,12 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,eAAe,CAAC;EACd,gBAAgB,EAAE,GAAG;CACtB;;ACFD,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB",
+    "mappings": "AEAA,AAAA,eAAe,CAAC;EACd,gBAAgB,EDAP,OAAO;ECChB,MAAM,EAAE,SAAS;EACjB,aAAa,EAAE,GAAG;CACnB;;ACJD,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,KAAK,CAAC,GAAG,CFCP,OAAO;EEAjB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB;;ACLD,AAAA,IAAI,CAAC;EACH,gBAAgB,EHDP,OAAO;EGEhB,MAAM,EAAE,KAAK;CACd",
     "sources": [
         "index.scss",
+        "_Vars.scss",
         "_Task.scss",
-        "_Tasks.scss"
+        "_Tasks.scss",
+        "_App.scss"
     ],
     "names": [],
     "file": "index.css"

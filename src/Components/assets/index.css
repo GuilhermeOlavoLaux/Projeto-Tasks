@@ -1,10 +1,18 @@
 .task-container {
-  background-color: red;
+  background-color: #444444;
+  margin: 20px 40px;
+  border-radius: 6px;
 }
 
 .tasks-container {
-  border: solid 2px black;
+  border: solid 2px #7ae30b;
+  border-radius: 5px;
   margin: 40px;
   min-height: 200px;
+}
+
+body {
+  background-color: #222222;
+  height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */
