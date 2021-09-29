@@ -1,0 +1,10 @@
+.task-container {
+  background-color: red;
+}
+
+.tasks-container {
+  border: solid 2px black;
+  margin: 40px;
+  min-height: 200px;
+}
+/*# sourceMappingURL=index.css.map */

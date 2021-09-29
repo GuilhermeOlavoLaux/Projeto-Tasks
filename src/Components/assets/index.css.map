@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,eAAe,CAAC;EACd,gBAAgB,EAAE,GAAG;CACtB;;ACFD,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "index.scss",
+        "_Task.scss",
+        "_Tasks.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
