@@ -9,12 +9,8 @@ interface ITask {
 }
 
 export default class Task extends React.Component<ITask> {
-  constructor(props: any) {
+  constructor(props: ITask) {
     super(props)
-    this.state = {
-      id: this.props.task.id,
-      name: this.props.task.name
-    }
   }
 
   handleClick(id: any) {
@@ -24,15 +20,11 @@ export default class Task extends React.Component<ITask> {
   render() {
     return (
       <div className='task-container'>
-        <h1>TASKS: </h1>
-
         <p>
           Task-name:
-          {
-            //@ts-ignore
-            this.state.name
-          }
+          {this.props.task.name}
         </p>
+
         <p>Task-id: {this.props.task.id}</p>
 
         <button onClick={() => this.handleClick(this.props.task.id)}>

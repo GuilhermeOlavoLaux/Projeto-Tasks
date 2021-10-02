@@ -8,11 +8,65 @@
   border: solid 2px #7ae30b;
   border-radius: 5px;
   margin: 40px;
-  min-height: 200px;
+  min-height: 65vh;
+  width: 50vw;
+}
+
+.tasks-container .title-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasks-container .title-button h1 {
+  font-weight: 600;
+  margin: 20px;
+  margin-left: 40px;
+  color: #eee;
+}
+
+.tasks-container .title-button button {
+  margin-top: 59px;
+  margin-right: 40px;
 }
 
 body {
   background-color: #222222;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.green-button {
+  background-color: #7ae30b;
+  color: #222222;
+  height: 2.3rem;
+  border: none;
+  border-radius: 6px;
+  width: 9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+.green-button:hover {
+  cursor: pointer;
+  background-color: #444444 !important;
+  color: #7ae30b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,22 @@
-.tasks-container{
-    border: solid 2px $green-light;
-    border-radius: 5px;
-    margin: 40px;
-    min-height: 200px;
+.tasks-container {
+  border: solid 2px $green-light;
+  border-radius: 5px;
+  margin: 40px;
+  min-height: 65vh;
+  width: 50vw;
+  .title-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-weight: 600;
+      margin: 20px;
+      margin-left: 40px;
+      color: $text-white;
+    }
+    button {
+      margin-top: 59px;
+      margin-right: 40px;
+    }
+  }
 }
