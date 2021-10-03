@@ -1,11 +1,14 @@
 import React from 'react'
+import InspectModal from './Inspect-Modal'
+import EditModal from './Edit-Modal'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEye,
   faEdit,
   faTrashAlt
 } from '@fortawesome/free-solid-svg-icons'
-import EditModal from './Inspect-Modal'
+
 interface ITask {
   task: {
     id: number
@@ -33,7 +36,7 @@ export default class Task extends React.Component<ITask> {
         </div>
 
         <div className='icons-container'>
-          <EditModal
+          <InspectModal
             text={
               <FontAwesomeIcon
                 icon={faEye}
@@ -43,7 +46,7 @@ export default class Task extends React.Component<ITask> {
               />
             }
             task={this.props.task}
-          ></EditModal>
+          ></InspectModal>
 
           <EditModal
             text={
