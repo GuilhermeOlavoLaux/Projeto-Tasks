@@ -38,6 +38,15 @@
 
 .task-container .icons-container {
   margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .task-container .icons-container .icon-button {
@@ -114,5 +123,15 @@ body * {
   color: #7ae30b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.inspect-modal {
+  background-color: #222222;
+}
+
+.inspect-modal .inspect-modal-container {
+  height: 400px;
+  border: solid #7ae30b 2px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=index.css.map */

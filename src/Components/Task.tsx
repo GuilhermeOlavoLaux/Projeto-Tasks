@@ -5,6 +5,7 @@ import {
   faEdit,
   faTrashAlt
 } from '@fortawesome/free-solid-svg-icons'
+import EditModal from './Edit-Modal'
 interface ITask {
   task: {
     id: number
@@ -32,18 +33,28 @@ export default class Task extends React.Component<ITask> {
         </div>
 
         <div className='icons-container'>
-          <FontAwesomeIcon
-            icon={faEye}
-            size='1x'
-            color='#7ae30b'
-            className='icon-button'
-          />
-          <FontAwesomeIcon
-            icon={faEdit}
-            size='1x'
-            color='#7ae30b'
-            className='icon-button'
-          />
+          <EditModal
+            text={
+              <FontAwesomeIcon
+                icon={faEye}
+                size='1x'
+                color='#7ae30b'
+                className='icon-button'
+              />
+            }
+          ></EditModal>
+
+          <EditModal
+            text={
+              <FontAwesomeIcon
+                icon={faEdit}
+                size='1x'
+                color='#7ae30b'
+                className='icon-button'
+              />
+            }
+          ></EditModal>
+
           <FontAwesomeIcon
             icon={faTrashAlt}
             size='1x'

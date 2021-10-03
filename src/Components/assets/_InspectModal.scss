@@ -1,0 +1,9 @@
+.inspect-modal{
+    background-color: $grey-100;
+
+    .inspect-modal-container{
+        height: 400px;
+        border: solid $green-light 2px;
+        border-radius: 6px;
+    }
+}

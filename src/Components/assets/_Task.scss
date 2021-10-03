@@ -30,6 +30,9 @@
 
   .icons-container {
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .icon-button {
       margin-right: 10px;
       cursor: pointer;

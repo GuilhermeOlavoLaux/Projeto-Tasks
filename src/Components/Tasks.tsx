@@ -1,7 +1,6 @@
 import React from 'react'
 import Task from './Task'
 import Button from './utils/Button'
-
 interface Props {}
 
 interface Itask {
