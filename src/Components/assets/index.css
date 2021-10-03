@@ -2,6 +2,29 @@
   background-color: #444444;
   margin: 20px 40px;
   border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-container p {
+  margin: 20px;
+  color: #eee;
+  font-size: 1.3rem;
+}
+
+.task-container .icons-container {
+  margin-right: 20px;
+}
+
+.task-container .icons-container .icon-button {
+  margin-right: 10px;
 }
 
 .tasks-container {
@@ -25,14 +48,15 @@
 }
 
 .tasks-container .title-button h1 {
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 2.5rem;
   margin: 20px;
   margin-left: 40px;
   color: #eee;
 }
 
 .tasks-container .title-button button {
-  margin-top: 59px;
+  margin-top: 95px;
   margin-right: 40px;
 }
 

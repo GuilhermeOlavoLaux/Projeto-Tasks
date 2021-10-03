@@ -1,5 +1,4 @@
 import React from 'react'
-import { isPropertySignature } from 'typescript'
 import Task from './Task'
 import Button from './utils/Button'
 

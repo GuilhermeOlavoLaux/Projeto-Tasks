@@ -2,4 +2,21 @@
   background-color: $grey-200;
   margin: 20px 40px;
   border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 20px;
+    color: $text-white;
+    font-size: 1.3rem;
+  }
+
+  .icons-container {
+    margin-right: 20px;
+    .icon-button{
+      margin-right: 10px;
+    }
+
+  }
 }

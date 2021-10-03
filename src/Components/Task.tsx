@@ -1,5 +1,10 @@
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faEye,
+  faEdit,
+  faTrashAlt
+} from '@fortawesome/free-solid-svg-icons'
 interface ITask {
   task: {
     id: number
@@ -21,15 +26,30 @@ export default class Task extends React.Component<ITask> {
     return (
       <div className='task-container'>
         <p>
-          Task-name:
           {this.props.task.name}
         </p>
 
-        <p>Task-id: {this.props.task.id}</p>
-
-        <button onClick={() => this.handleClick(this.props.task.id)}>
-          Delete
-        </button>
+        <div className='icons-container'>
+          <FontAwesomeIcon
+            icon={faEye}
+            size='1x'
+            color='#7ae30b'
+            className='icon-button'
+          />
+          <FontAwesomeIcon
+            icon={faEdit}
+            size='1x'
+            color='#7ae30b'
+            className='icon-button'
+          />
+          <FontAwesomeIcon
+            icon={faTrashAlt}
+            size='1x'
+            color='#7ae30b'
+            className='icon-button'
+            onClick={() => this.handleClick(this.props.task.id)}
+          />
+        </div>
       </div>
     )
   }
