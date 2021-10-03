@@ -6,17 +6,33 @@
   justify-content: space-between;
   align-items: center;
 
-  p {
-    margin: 20px;
-    color: $text-white;
-    font-size: 1.3rem;
+  .task-info-container {
+    height: 100px;
+    width: 450px;
+    // overflow: hidden;
+    h2 {
+      margin: 20px 0px 0px 20px;
+      color: $text-white;
+      font-size: 1.3rem;
+    }
+    p {
+      margin: 10px 0px 20px 20px;
+      color: $text-white;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      width: 200px;
+      overflow: hidden;
+      height: 20px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   .icons-container {
     margin-right: 20px;
-    .icon-button{
+    .icon-button {
       margin-right: 10px;
+      cursor: pointer;
     }
-
   }
 }

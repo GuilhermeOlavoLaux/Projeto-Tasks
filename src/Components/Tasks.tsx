@@ -7,6 +7,7 @@ interface Props {}
 interface Itask {
   id: number
   name: string
+  description: string
 }
 
 interface State {
@@ -19,8 +20,8 @@ export default class Tasks extends React.Component<Props, State> {
     super(props)
     this.state = {
       tasksList: [
-        { id: 1, name: 'Guilherme' },
-        { id: 2, name: 'Guilherme2' }
+        { id: 1, name: 'Guilherme', description: 'Aprender TypeScript'},
+        { id: 2, name: 'Guilherme2', description: 'Aprender desenvolvimentad asdasdasdsa'}
       ]
     }
     this.handleTaskDelete = this.handleTaskDelete.bind(this)
@@ -32,6 +33,8 @@ export default class Tasks extends React.Component<Props, State> {
     )
     this.setState({ tasksList: newList })
   }
+
+  
 
   render() {
     return (

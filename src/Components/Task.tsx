@@ -9,6 +9,7 @@ interface ITask {
   task: {
     id: number
     name: string
+    description: string
   }
   handleTaskDelete: any
 }
@@ -25,9 +26,10 @@ export default class Task extends React.Component<ITask> {
   render() {
     return (
       <div className='task-container'>
-        <p>
-          {this.props.task.name}
-        </p>
+        <div className='task-info-container'>
+          <h2>{this.props.task.name}</h2>
+          <p>{this.props.task.description}</p>
+        </div>
 
         <div className='icons-container'>
           <FontAwesomeIcon

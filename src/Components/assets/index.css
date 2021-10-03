@@ -13,10 +13,27 @@
           align-items: center;
 }
 
-.task-container p {
-  margin: 20px;
+.task-container .task-info-container {
+  height: 100px;
+  width: 450px;
+}
+
+.task-container .task-info-container h2 {
+  margin: 20px 0px 0px 20px;
   color: #eee;
   font-size: 1.3rem;
+}
+
+.task-container .task-info-container p {
+  margin: 10px 0px 20px 20px;
+  color: #eee;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 200px;
+  overflow: hidden;
+  height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .task-container .icons-container {
@@ -25,6 +42,7 @@
 
 .task-container .icons-container .icon-button {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .tasks-container {
@@ -73,6 +91,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Quicksand', sans-serif;
+}
+
+body * {
+  margin: 0px;
 }
 
 .green-button {
