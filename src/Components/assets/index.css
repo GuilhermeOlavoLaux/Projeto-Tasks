@@ -134,4 +134,42 @@ body * {
   border: solid #7ae30b 2px;
   border-radius: 6px;
 }
+
+.inspect-modal .inspect-modal-container h1 {
+  color: #7ae30b;
+  padding: 20px;
+}
+
+.inspect-modal .inspect-modal-container h4 {
+  padding-left: 20px;
+  color: #eee;
+}
+
+.inspect-modal .inspect-modal-container p {
+  padding: 20px;
+  color: #eee;
+  width: 455px;
+  overflow: auto;
+  height: 200px;
+}
+
+.inspect-modal .inspect-modal-container button {
+  background-color: #7ae30b;
+  color: #222222;
+  height: 2.3rem;
+  border: none;
+  border-radius: 6px;
+  width: 9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  margin: 10px 300px;
+}
+
+.inspect-modal .inspect-modal-container button :hover {
+  cursor: pointer;
+  background-color: #444444 !important;
+  color: #7ae30b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=index.css.map */

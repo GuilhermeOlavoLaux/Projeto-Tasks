@@ -20,6 +20,10 @@ export default function EditModal(props) {
       >
         <Modal.Body className='inspect-modal'>
           <div className='inspect-modal-container'>
+            <h1>{props.task.name}</h1>
+            <h4>Descrição:</h4>
+            <p>{props.task.description}</p>
+
             <Button variant='secondary' onClick={handleClose}>
               Close
             </Button>

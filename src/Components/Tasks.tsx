@@ -20,7 +20,7 @@ export default class Tasks extends React.Component<Props, State> {
     this.state = {
       tasksList: [
         { id: 1, name: 'Guilherme', description: 'Aprender TypeScript'},
-        { id: 2, name: 'Guilherme2', description: 'Aprender desenvolvimentad asdasdasdsa'}
+        { id: 2, name: 'Guilherme2', description: 'Aprender Desenvolvimento Web e aprimorar minhas habilidades com React Aprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com React'}
       ]
     }
     this.handleTaskDelete = this.handleTaskDelete.bind(this)

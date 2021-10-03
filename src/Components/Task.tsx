@@ -42,6 +42,7 @@ export default class Task extends React.Component<ITask> {
                 className='icon-button'
               />
             }
+            task={this.props.task}
           ></EditModal>
 
           <EditModal
@@ -53,6 +54,7 @@ export default class Task extends React.Component<ITask> {
                 className='icon-button'
               />
             }
+            task={this.props.task}
           ></EditModal>
 
           <FontAwesomeIcon
