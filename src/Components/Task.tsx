@@ -5,7 +5,7 @@ import {
   faEdit,
   faTrashAlt
 } from '@fortawesome/free-solid-svg-icons'
-import EditModal from './Edit-Modal'
+import EditModal from './Inspect-Modal'
 interface ITask {
   task: {
     id: number
