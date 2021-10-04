@@ -1,6 +1,6 @@
 import React from 'react'
-import InspectModal from './Inspect-Modal'
-import EditModal from './Edit-Modal'
+import InspectModal from './InspectModal'
+import EditModal from './EditModal'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {

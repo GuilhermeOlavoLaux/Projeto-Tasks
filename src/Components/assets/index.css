@@ -173,4 +173,176 @@ body * {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.edit-modal {
+  background-color: #222222;
+}
+
+.edit-modal .edit-modal-container {
+  position: relative;
+  height: 500px;
+  border: solid #7ae30b 2px;
+  border-radius: 6px;
+}
+
+.edit-modal .edit-modal-container h1 {
+  color: #7ae30b;
+  padding: 20px;
+}
+
+.edit-modal .edit-modal-container .edits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.edit-modal .edit-modal-container .edits-container h4 {
+  padding-left: 20px;
+  color: #eee;
+}
+
+.edit-modal .edit-modal-container .edits-container p {
+  margin-top: 10px;
+  padding: 20px;
+  color: #eee;
+  width: 455px;
+  overflow: auto;
+  height: 200px;
+}
+
+.edit-modal .edit-modal-container .edits-container svg {
+  cursor: pointer;
+}
+
+.edit-modal .edit-modal-container .input-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  display: none;
+  margin: 20px;
+}
+
+.edit-modal .edit-modal-container .input-name-container svg {
+  cursor: pointer;
+}
+
+.edit-modal .edit-modal-container .input-name-container .input-name {
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #444444;
+  color: #eee;
+  border-radius: 10px;
+  border: none;
+}
+
+.edit-modal .edit-modal-container button {
+  background-color: #7ae30b;
+  color: #222222;
+  height: 2.3rem;
+  border: none;
+  border-radius: 6px;
+  width: 9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  margin: 20px 300px;
+}
+
+.edit-modal .edit-modal-container button :hover {
+  cursor: pointer;
+  background-color: #444444 !important;
+  color: #7ae30b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.edit-modal .edit-modal-container .text-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-modal .edit-modal-container .text-description-container h4 {
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #eee;
+}
+
+.edit-modal .edit-modal-container .text-description-container p {
+  margin-top: 10px;
+  max-height: 100px;
+  padding: 0px 0px 20px 20px;
+  color: #eee;
+  width: 400px;
+  overflow: auto;
+}
+
+.edit-modal .edit-modal-container .text-description-container svg {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.edit-modal .edit-modal-container .input-description-container {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+
+.edit-modal .edit-modal-container .input-description-container .description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-modal .edit-modal-container .input-description-container .description-container .input-description {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 380px;
+  height: 80px;
+  background-color: #444444;
+  color: #eee;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+.edit-modal .edit-modal-container .input-description-container .description-container svg {
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.edit-modal .button-modal {
+  position: absolute !important;
+  bottom: 0;
+}
 /*# sourceMappingURL=index.css.map */
