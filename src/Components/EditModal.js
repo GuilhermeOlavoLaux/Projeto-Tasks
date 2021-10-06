@@ -10,14 +10,31 @@ export default function EditModal(props) {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
+  const [inputName, setInputName] = useState('')
+  const [inputDescription, setInputDescription] = useState('')
+
   function showInputName() {
     const input = document.querySelector('.input-name-container')
-
-    if (input.style.display === 'none') {
-      input.style.display = 'initial'
-    } else {
+    if (input.style.display === 'initial') {
       input.style.display = 'none'
+    } else {
+      input.style.display = 'initial'
     }
+  }
+
+  const handleInputNameChange = (e) => {
+    setInputName(e.target.value)
+  }
+  const handleInputDescriptionChange = (e) => {
+    setInputDescription(e.target.value)
+  }
+
+  const saveNewName = () => {
+    props.changeName(props.task.id, inputName)
+  }
+
+  const saveNewDescription = () => {
+    props.changeDescription(props.task.id, inputDescription)
   }
 
   function showInputDescription() {
@@ -25,10 +42,10 @@ export default function EditModal(props) {
       '.input-description-container'
     )
 
-    if (input.style.display === 'none') {
-      input.style.display = 'initial'
-    } else {
+    if (input.style.display === 'initial') {
       input.style.display = 'none'
+    } else {
+      input.style.display = 'initial'
     }
   }
 
@@ -57,11 +74,15 @@ export default function EditModal(props) {
             </div>
 
             <div className='input-name-container'>
-              <input className='input-name'></input>
+              <input
+                className='input-name'
+                onChange={handleInputNameChange}
+              ></input>
               <FontAwesomeIcon
                 icon={faSave}
                 size='1x'
                 color='#7ae30b'
+                onClick={saveNewName}
               ></FontAwesomeIcon>
             </div>
 
@@ -82,15 +103,21 @@ export default function EditModal(props) {
 
             <div className='input-description-container'>
               <div className='description-container'>
-                <textarea className='input-description'></textarea>
+                <textarea
+                  className='input-description'
+                  onChange={handleInputDescriptionChange}
+                ></textarea>
                 <FontAwesomeIcon
                   icon={faSave}
                   size='1x'
                   color='#7ae30b'
+                  onClick={saveNewDescription}
                 ></FontAwesomeIcon>
               </div>
             </div>
-            <Button onClick={handleClose} className='button-modal'>Close</Button>
+            <Button onClick={handleClose} className='button-modal'>
+              Close
+            </Button>
           </div>
         </Modal.Body>
       </Modal>

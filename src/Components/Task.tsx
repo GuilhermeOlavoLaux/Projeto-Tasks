@@ -16,6 +16,8 @@ interface ITask {
     description: string
   }
   handleTaskDelete: any
+  changeName: any
+  changeDescription: any
 }
 
 export default class Task extends React.Component<ITask> {
@@ -58,6 +60,8 @@ export default class Task extends React.Component<ITask> {
               />
             }
             task={this.props.task}
+            changeName={this.props.changeName}
+            changeDescription={this.props.changeDescription}
           ></EditModal>
 
           <FontAwesomeIcon
