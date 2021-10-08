@@ -12,60 +12,93 @@
       padding-left: 20px;
       padding-top: 20px;
     }
-    .edits-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 20px;
 
-      h4 {
-        padding-left: 20px;
-        color: $text-white;
-      }
+    .id-input-container {
+      margin-top: 60px;
+      margin-left: 20px;
+      align-items: center;
+      display: flex;
 
       p {
-        margin-top: 10px;
-        padding: 20px;
+        padding-right: 48px;
         color: $text-white;
-        width: 455px;
-        overflow: auto;
-        height: 200px;
+        width: 100px;
       }
-      svg {
-        cursor: pointer;
-      }
-    }
-    .input-name-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 200px;
-      display: none;
-      margin: 20px;
-      svg {
-        cursor: pointer;
-      }
-      .input-name {
-        margin-top: 20px;
-        margin-right: 20px;
+
+      input {
         background-color: $grey-200;
         color: $text-white;
         border-radius: 10px;
         border: none;
+        height: 30px;
+        padding: 10px;
+        width: 300px;
       }
     }
 
-    button {
-      background-color: $green-light;
-      color: $grey-100;
-      height: 2.3rem;
-      border: none;
-      border-radius: 6px;
-      width: 9rem;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 1rem;
-      margin: 20px 300px;
+    .name-input-container {
+      margin-top: 20px;
+      margin-left: 20px;
+      align-items: center;
+      display: flex;
 
+      p {
+        color: $text-white;
+        width: 100px;
+
+      }
+
+      input {
+        background-color: $grey-200;
+        color: $text-white;
+        border-radius: 10px;
+        border: none;
+        height: 30px;
+        padding: 10px;
+        width: 300px;
+      }
+    }
+
+    .description-input-container {
+      margin-top: 20px;
+      margin-left: 20px;
+      align-items: center;
+      display: flex;
+      p {
+        color: $text-white;
+        width: 100px;
+      }
+      textarea {
+        margin-top: 5px;
+        padding: 10px;
+        width: 300px;
+        height: 80px;
+        background-color: $grey-200;
+        color: $text-white;
+        border-radius: 10px;
+        border: none;
+        resize: none;
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+
+      margin-top: 130px;
+      margin-left: 160px;
+      margin-right: 20px;
+
+      button {
+        background-color: $green-light;
+        color: $grey-100;
+        height: 2.3rem;
+        border: none;
+        border-radius: 6px;
+        width: 9rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        margin-left: 20px;
+      }
       :hover {
         cursor: pointer;
         background-color: $grey-200 !important;
@@ -73,60 +106,5 @@
         transition: 0.5s;
       }
     }
-    .text-description-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      h4 {
-        margin-top: 20px;
-        padding-left: 20px;
-        color: $text-white;
-      }
-      p {
-        margin-top: 10px;
-        max-height: 100px;
-        padding: 0px 0px 20px 20px;
-        color: $text-white;
-        width: 400px;
-        overflow: auto;
-      }
-      svg {
-        margin-right: 20px;
-        cursor: pointer;
-      }
-    }
-
-    .input-description-container {
-      display: none;
-      justify-content: space-between;
-      align-items: center;
-      width: 200px;
-
-      .description-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .input-description {
-          margin-top: 5px;
-          margin-left: 20px;
-          width: 380px;
-          height: 80px;
-          background-color: $grey-200;
-          color: $text-white;
-          border-radius: 10px;
-          border: none;
-          resize: none;
-        }
-        svg {
-          margin-right: 23px;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-  .button-modal {
-    position: absolute !important;
-    bottom: 0;
   }
 }

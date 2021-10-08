@@ -143,144 +143,79 @@ body * {
   padding-top: 20px;
 }
 
-.add-task-modal .add-task-container .edits-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.add-task-modal .add-task-container .id-input-container {
+  margin-top: 60px;
+  margin-left: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 20px;
-}
-
-.add-task-modal .add-task-container .edits-container h4 {
-  padding-left: 20px;
-  color: #eee;
-}
-
-.add-task-modal .add-task-container .edits-container p {
-  margin-top: 10px;
-  padding: 20px;
-  color: #eee;
-  width: 455px;
-  overflow: auto;
-  height: 200px;
-}
-
-.add-task-modal .add-task-container .edits-container svg {
-  cursor: pointer;
-}
-
-.add-task-modal .add-task-container .input-name-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 200px;
-  display: none;
-  margin: 20px;
 }
 
-.add-task-modal .add-task-container .input-name-container svg {
-  cursor: pointer;
+.add-task-modal .add-task-container .id-input-container p {
+  padding-right: 48px;
+  color: #eee;
+  width: 100px;
 }
 
-.add-task-modal .add-task-container .input-name-container .input-name {
-  margin-top: 20px;
-  margin-right: 20px;
+.add-task-modal .add-task-container .id-input-container input {
   background-color: #444444;
   color: #eee;
   border-radius: 10px;
   border: none;
+  height: 30px;
+  padding: 10px;
+  width: 300px;
 }
 
-.add-task-modal .add-task-container button {
-  background-color: #7ae30b;
-  color: #222222;
-  height: 2.3rem;
-  border: none;
-  border-radius: 6px;
-  width: 9rem;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  margin: 20px 300px;
-}
-
-.add-task-modal .add-task-container button :hover {
-  cursor: pointer;
-  background-color: #444444 !important;
-  color: #7ae30b;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.add-task-modal .add-task-container .text-description-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.add-task-modal .add-task-container .text-description-container h4 {
+.add-task-modal .add-task-container .name-input-container {
   margin-top: 20px;
-  padding-left: 20px;
-  color: #eee;
-}
-
-.add-task-modal .add-task-container .text-description-container p {
-  margin-top: 10px;
-  max-height: 100px;
-  padding: 0px 0px 20px 20px;
-  color: #eee;
-  width: 400px;
-  overflow: auto;
-}
-
-.add-task-modal .add-task-container .text-description-container svg {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.add-task-modal .add-task-container .input-description-container {
-  display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-left: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
-}
-
-.add-task-modal .add-task-container .input-description-container .description-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.add-task-modal .add-task-container .name-input-container p {
+  color: #eee;
+  width: 100px;
+}
+
+.add-task-modal .add-task-container .name-input-container input {
+  background-color: #444444;
+  color: #eee;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  padding: 10px;
+  width: 300px;
+}
+
+.add-task-modal .add-task-container .description-input-container {
+  margin-top: 20px;
+  margin-left: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.add-task-modal .add-task-container .input-description-container .description-container .input-description {
+.add-task-modal .add-task-container .description-input-container p {
+  color: #eee;
+  width: 100px;
+}
+
+.add-task-modal .add-task-container .description-input-container textarea {
   margin-top: 5px;
-  margin-left: 20px;
-  width: 380px;
+  padding: 10px;
+  width: 300px;
   height: 80px;
   background-color: #444444;
   color: #eee;
@@ -289,14 +224,33 @@ body * {
   resize: none;
 }
 
-.add-task-modal .add-task-container .input-description-container .description-container svg {
-  margin-right: 23px;
-  cursor: pointer;
+.add-task-modal .add-task-container .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 130px;
+  margin-left: 160px;
+  margin-right: 20px;
 }
 
-.add-task-modal .button-modal {
-  position: absolute !important;
-  bottom: 0;
+.add-task-modal .add-task-container .buttons-container button {
+  background-color: #7ae30b;
+  color: #222222;
+  height: 2.3rem;
+  border: none;
+  border-radius: 6px;
+  width: 9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.add-task-modal .add-task-container .buttons-container :hover {
+  cursor: pointer;
+  background-color: #444444 !important;
+  color: #7ae30b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .inspect-modal {
