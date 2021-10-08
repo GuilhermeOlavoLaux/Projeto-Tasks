@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { useState } from 'react'
 
-export default function EditModal(props) {
+export default function AddTask(props) {
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -18,15 +18,10 @@ export default function EditModal(props) {
         backdrop='static'
         keyboard={false}
       >
-        <Modal.Body className='inspect-modal'>
-          <div className='inspect-modal-container'>
-            <h1>{props.task.name}</h1>
-            <h4>Descrição:</h4>
-            <p>{props.task.description}</p>
-
-            <Button variant='secondary' onClick={handleClose}>
-              Close
-            </Button>
+        <Modal.Body className='add-task-modal'>
+          <div className='add-task-container'>
+            <h1>Adicionar Tarefa</h1>
+            <Button onClick={handleClose}>Fechar</Button>
           </div>
         </Modal.Body>
       </Modal>

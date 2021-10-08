@@ -116,7 +116,7 @@ export default function EditModal(props) {
               </div>
             </div>
             <Button onClick={handleClose} className='button-modal'>
-              Close
+              Fechar
             </Button>
           </div>
         </Modal.Body>

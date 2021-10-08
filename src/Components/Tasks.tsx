@@ -1,7 +1,7 @@
 import React from 'react'
-import { threadId } from 'worker_threads'
 import Task from './Task'
 import Button from './utils/Button'
+import AddTask from './AddTaskModal'
 interface Props {}
 
 interface Itask {
@@ -73,7 +73,14 @@ export default class Tasks extends React.Component<Props, State> {
       <div className='tasks-container'>
         <div className='title-button'>
           <h1>Minhas Tarefas</h1>
-          <Button text={'Adicionar'}></Button>
+          <button className='green-button'>
+            {
+              <AddTask
+                text='Adicionar'
+                task={this.state.tasksList}
+              ></AddTask>
+            }
+          </button>
         </div>
 
         {this.state.tasksList.map((task) => (
