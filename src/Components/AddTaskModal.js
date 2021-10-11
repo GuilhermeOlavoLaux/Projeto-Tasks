@@ -8,6 +8,31 @@ export default function AddTask(props) {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
+
+  const [id, setId] = useState('')
+
+  const [name, setName] = useState('')
+
+  const [description, setDescription] = useState('')
+
+
+  
+  function handleIdChange(e){
+    setId(e)
+  }
+ 
+  function handleNameChange(e){
+    setName(e)
+  }
+  function handleDescriptionChnage(e){
+    setDescription(e)
+  }
+
+  function saveNewTask(){
+    props.addTask(id, name, description)
+  }
+  
+
   return (
     <>
       <div onClick={handleShow}>{props.text}</div>
@@ -25,22 +50,22 @@ export default function AddTask(props) {
 
             <div className='id-input-container'>
               <p>ID:</p>
-              <input></input>
+              <input onChange={(e) => handleIdChange(e.target.value)}></input>
             </div>
 
             <div className='name-input-container'>
               <p>Nome:</p>
-              <input></input>
+              <input onChange={(e) => handleNameChange(e.target.value)}></input>
             </div>
 
             <div className='description-input-container'>
               <p>Descrição:</p>
-              <textarea></textarea>
+              <textarea onChange={(e) => handleDescriptionChnage(e.target.value)}></textarea>
             </div>
 
             <div className='buttons-container'>
               <Button onClick={handleClose}>Fechar</Button>
-              <Button onClick={handleClose}>Salvar</Button>
+              <Button onClick={saveNewTask}>Salvar</Button>
             </div>
           </div>
         </Modal.Body>

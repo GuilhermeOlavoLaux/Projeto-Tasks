@@ -1,6 +1,5 @@
 import React from 'react'
 import Task from './Task'
-import Button from './utils/Button'
 import AddTask from './AddTaskModal'
 interface Props {}
 
@@ -41,6 +40,19 @@ export default class Tasks extends React.Component<Props, State> {
     this.handleTaskDelete = this.handleTaskDelete.bind(this)
     this.changeName = this.changeName.bind(this)
     this.changeDescription = this.changeDescription.bind(this)
+    this.saveNewTask = this.saveNewTask.bind(this)
+  }
+
+  saveNewTask(id: string, name: string, description: string){
+    const newTask = {id, name, description}
+    newTask.id = id
+    newTask.name = name
+    newTask.description = description
+
+    const actualTaskList = [...this.state.tasksList, newTask]
+    this.setState(
+      //@ts-ignore
+      {tasksList: actualTaskList})
   }
 
   handleTaskDelete(taskId: number) {
@@ -78,6 +90,7 @@ export default class Tasks extends React.Component<Props, State> {
               <AddTask
                 text='Adicionar'
                 task={this.state.tasksList}
+                addTask ={this.saveNewTask}
               ></AddTask>
             }
           </button>
