@@ -21,9 +21,6 @@ interface ITask {
 }
 
 export default class Task extends React.Component<ITask> {
-  constructor(props: ITask) {
-    super(props)
-  }
 
   handleClick(id: any) {
     this.props.handleTaskDelete(id)
