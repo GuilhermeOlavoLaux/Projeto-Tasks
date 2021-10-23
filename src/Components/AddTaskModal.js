@@ -9,17 +9,12 @@ export default function AddTask(props) {
   const handleShow = () => setShow(true)
 
 
-  const [id, setId] = useState('')
 
   const [name, setName] = useState('')
 
   const [description, setDescription] = useState('')
 
-
   
-  function handleIdChange(e){
-    setId(e)
-  }
  
   function handleNameChange(e){
     setName(e)
@@ -29,8 +24,7 @@ export default function AddTask(props) {
   }
 
   function saveNewTask(){
-    props.addTask(id, name, description)
-    handleClose()
+    props.addTask(name, description)
   }
   
 
@@ -47,12 +41,6 @@ export default function AddTask(props) {
         <Modal.Body className='add-task-modal'>
           <div className='add-task-container'>
             <h1>Adicionar Tarefa</h1>
-
-
-            <div className='id-input-container'>
-              <p>ID:</p>
-              <input onChange={(e) => handleIdChange(e.target.value)}></input>
-            </div>
 
             <div className='name-input-container'>
               <p>Nome:</p>
