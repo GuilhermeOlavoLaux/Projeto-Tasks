@@ -1,6 +1,7 @@
 import React from 'react'
 import Task from './Task'
 import AddTask from './AddTaskModal'
+import api from '../services/api'
 interface Props {}
 
 interface Itask {
@@ -17,25 +18,7 @@ export default class Tasks extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
     this.state = {
-      tasksList: [
-        {
-          id: 1,
-          name: 'Guilherme',
-          description: 'Aprender TypeScript'
-        },
-        {
-          id: 2,
-          name: 'Guilherme2',
-          description:
-            'Aprender Desenvolvimento Web e aprimorar minhas habilidades com React Aprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com React'
-        },
-        {
-          id: 3,
-          name: 'Guilherme3',
-          description:
-            'Aprender Desenvolvimento Web e aprimorar minhas habilidades com React Aprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com ReactAprender Desenvolvimento Web e aprimorar minhas habilidades com React'
-        }
-      ]
+      tasksList: [] 
     }
     this.handleTaskDelete = this.handleTaskDelete.bind(this)
     this.changeName = this.changeName.bind(this)
@@ -43,16 +26,39 @@ export default class Tasks extends React.Component<Props, State> {
     this.saveNewTask = this.saveNewTask.bind(this)
   }
 
-  saveNewTask(id: string, name: string, description: string){
-    const newTask = {id, name, description}
-    newTask.id = id
+  componentDidMount() {
+     api.get(`/tasks`)
+      .then(res => {
+        const tasksList = res.data;
+        //@ts-ignore
+        this.setState( tasksList  );
+      })
+
+  }
+
+
+
+  saveNewTask(name: string, description: string){
+    const newTask = {name, description}
     newTask.name = name
     newTask.description = description
 
-    const actualTaskList = [...this.state.tasksList, newTask]
-    this.setState(
-      //@ts-ignore
-      {tasksList: actualTaskList})
+
+    api.post(`tasks`, { name, description })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+
+      api.get(`/tasks`)
+      .then(res => {
+        const tasksList = res.data;
+        //@ts-ignore
+        this.setState( tasksList  );
+      })
+
+
+
   }
 
   handleTaskDelete(taskId: number) {
@@ -81,6 +87,7 @@ export default class Tasks extends React.Component<Props, State> {
   }
 
   render() {
+
     return (
       <div className='tasks-container'>
         <div className='title-button'>
@@ -96,7 +103,8 @@ export default class Tasks extends React.Component<Props, State> {
           </button>
         </div>
 
-        {this.state.tasksList.map((task) => (
+        {
+        this.state.tasksList.map((task) => (
           <Task
             key={task.id}
             task={task}
