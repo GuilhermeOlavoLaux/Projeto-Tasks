@@ -3,11 +3,7 @@ import InspectModal from './InspectTaskModal'
 import EditModal from './EditTaskModal'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faEye,
-  faEdit,
-  faTrashAlt
-} from '@fortawesome/free-solid-svg-icons'
+import { faEye, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 interface ITask {
   task: {
@@ -21,7 +17,6 @@ interface ITask {
 }
 
 export default class Task extends React.Component<ITask> {
-
   handleClick(id: any) {
     this.props.handleTaskDelete(id)
   }
@@ -37,24 +32,14 @@ export default class Task extends React.Component<ITask> {
         <div className='icons-container'>
           <InspectModal
             text={
-              <FontAwesomeIcon
-                icon={faEye}
-                size='1x'
-                color='#7ae30b'
-                className='icon-button'
-              />
+              <FontAwesomeIcon icon={faEye} size='1x' color='#7ae30b' className='icon-button' />
             }
             task={this.props.task}
           ></InspectModal>
 
           <EditModal
             text={
-              <FontAwesomeIcon
-                icon={faEdit}
-                size='1x'
-                color='#7ae30b'
-                className='icon-button'
-              />
+              <FontAwesomeIcon icon={faEdit} size='1x' color='#7ae30b' className='icon-button' />
             }
             task={this.props.task}
             changeName={this.props.changeName}

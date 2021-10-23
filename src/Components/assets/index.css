@@ -88,7 +88,7 @@
 }
 
 body {
-  background-color: #222222;
+  background-color: #141314;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,9 +106,13 @@ body * {
   margin: 0px;
 }
 
+.body-container {
+  height: 100vh;
+}
+
 .green-button {
   background-color: #7ae30b;
-  color: #222222;
+  color: #141314;
   height: 2.3rem;
   border: none;
   border-radius: 6px;
@@ -126,7 +130,7 @@ body * {
 }
 
 .add-task-modal {
-  background-color: #222222;
+  background-color: #141314;
 }
 
 .add-task-modal .add-task-container {
@@ -235,7 +239,7 @@ body * {
 
 .add-task-modal .add-task-container .buttons-container button {
   background-color: #7ae30b;
-  color: #222222;
+  color: #141314;
   height: 2.3rem;
   border: none;
   border-radius: 6px;
@@ -254,7 +258,7 @@ body * {
 }
 
 .inspect-modal {
-  background-color: #222222;
+  background-color: #141314;
 }
 
 .inspect-modal .inspect-modal-container {
@@ -284,7 +288,7 @@ body * {
 
 .inspect-modal .inspect-modal-container button {
   background-color: #7ae30b;
-  color: #222222;
+  color: #141314;
   height: 2.3rem;
   border: none;
   border-radius: 6px;
@@ -303,7 +307,7 @@ body * {
 }
 
 .edit-modal {
-  background-color: #222222;
+  background-color: #141314;
 }
 
 .edit-modal .edit-modal-container {
@@ -379,7 +383,7 @@ body * {
 
 .edit-modal .edit-modal-container button {
   background-color: #7ae30b;
-  color: #222222;
+  color: #141314;
   height: 2.3rem;
   border: none;
   border-radius: 6px;

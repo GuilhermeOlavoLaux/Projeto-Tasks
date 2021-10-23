@@ -14,19 +14,19 @@ export default function AddTask(props) {
 
   const [description, setDescription] = useState('')
 
-  
- 
-  function handleNameChange(e){
+
+
+  function handleNameChange(e) {
     setName(e)
   }
-  function handleDescriptionChnage(e){
+  function handleDescriptionChnage(e) {
     setDescription(e)
   }
 
-  function saveNewTask(){
+  function saveNewTask() {
     props.addTask(name, description)
   }
-  
+
 
   return (
     <>
