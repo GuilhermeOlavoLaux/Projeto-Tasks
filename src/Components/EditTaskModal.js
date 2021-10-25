@@ -30,11 +30,11 @@ export default function EditModal(props) {
   }
 
   const saveNewName = () => {
-    props.changeName(props.task.id, inputName)
+    props.changeName(props.task._id, inputName)
   }
 
   const saveNewDescription = () => {
-    props.changeDescription(props.task.id, inputDescription)
+    props.changeDescription(props.task._id, inputDescription)
   }
 
   function showInputDescription() {

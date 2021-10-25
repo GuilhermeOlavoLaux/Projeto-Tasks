@@ -58,22 +58,24 @@ export default class Tasks extends React.Component<Props, State> {
     })
   }
 
-  changeName(id: any, newName: string) {
-    this.state.tasksList.forEach((element) => {
-      if (element._id === id) {
-        element.name = newName
-      }
+  async changeName(id: any, name: string) {
+    await api.put(`/tasks/${id}`, { name })
+
+    await api.get(`/tasks`).then((res) => {
+      const tasksList = res.data
+      //@ts-ignore
+      this.setState(tasksList)
     })
-    this.setState({ tasksList: this.state.tasksList })
   }
 
-  changeDescription(id: number, newDescription: string) {
-    this.state.tasksList.forEach((element) => {
-      if (element._id === id) {
-        element.description = newDescription
-      }
+  async changeDescription(id: number, description: string) {
+    await api.put(`/tasks/${id}`, { description })
+
+    await api.get(`/tasks`).then((res) => {
+      const tasksList = res.data
+      //@ts-ignore
+      this.setState(tasksList)
     })
-    this.setState({ tasksList: this.state.tasksList })
   }
 
   render() {
