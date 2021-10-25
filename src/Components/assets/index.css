@@ -55,10 +55,11 @@
 }
 
 .tasks-container {
+  margin-bottom: 20px;
   border: solid 2px #7ae30b;
   border-radius: 5px;
   margin: 40px;
-  min-height: 65vh;
+  min-height: 95vh;
   width: 50vw;
 }
 

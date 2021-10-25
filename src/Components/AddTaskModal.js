@@ -25,6 +25,7 @@ export default function AddTask(props) {
 
   function saveNewTask() {
     props.addTask(name, description)
+    handleClose()
   }
 
 
